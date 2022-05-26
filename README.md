@@ -11,7 +11,7 @@
 * Пропуск уже переведенных/оригинальных строк в файле из-за чего ускоряется процесс установки в разы!
 * Возможность дополнительно скопировать из папки `Data/ru/DLC`файлы и папки которые могут быть дополнительным контентом для локализации. С сохранием оригинальных файлов в папку `.old`.
 
-## [Специальные параметры](https://github.com/DenisSolicen/SolicenUniversalInstaller/blob/main/SpecialParameters.md)
+#### [Специальные параметры для текстовых файлов](https://github.com/DenisSolicen/SolicenUniversalInstaller/blob/main/SpecialParameters.md)
 
 ### Создание локализации (exec.ini):
 #### Основная установка
