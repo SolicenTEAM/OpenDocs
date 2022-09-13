@@ -1,5 +1,6 @@
 # Solicen.UniversalInstaller
 Закрытый репозиторий для моего универсального установщика.
+#### Что-то не понятно? Посетите [Wiki](https://github.com/DenisSolicen/SolicenUniversalInstaller/wiki) проекта!
 
 Внешний вид установщика:
 * Основной интерфейс: 
@@ -13,7 +14,7 @@
 * Осуществление прямого перевода строк в файлах типов `.txt` `.rpy`.  
 
 #### [Специальные параметры для текстовых файлов](https://github.com/DenisSolicen/SolicenUniversalInstaller/blob/main/SpecialParameters.md)
-#### Что-то не понятно? Посетите [Wiki](https://github.com/DenisSolicen/SolicenUniversalInstaller/wiki) проекта!
+
 
 ### Создание локализации (exec.ini):
 #### Основная установка
