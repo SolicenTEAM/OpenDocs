@@ -1,5 +1,5 @@
 # Solicen.UniversalInstaller
-Закрытый репозиторий для моего универсального установщика.
+Открытый репозиторий для моего универсального установщика.
 #### Что-то не понятно? Посетите [Wiki](https://github.com/DenisSolicen/SolicenUniversalInstaller/wiki) проекта!
 
 Внешний вид установщика:
