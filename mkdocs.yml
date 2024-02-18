@@ -1,15 +1,19 @@
-site_name: Solicen Open Format (SOF|SUI)
+site_name: SolicenTEAM Documentation
 repo_url: https://solicenteam.github.io/OpenDocs/
-repo_name: SolicenOpenDocs
+repo_name: SolicenTEAM/OpenDocs
+edit_uri: edit/master/docs/
 theme:
   name: material
   features:
+    - navigation.indexes
     - navigation.path
     - navigation.sections
     - navigation.top
+    - navigation.tracking
+    - navigation.expand
+    - navigation.prune
     - header.autohide
     - toc.integrate
-    - navigation.top
     - search.suggest
     - search.highlight
     - content.tabs.link
@@ -19,14 +23,8 @@ theme:
     - content.action.view
   language: ru
   palette:
-    - scheme: default
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    - scheme: slate 
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode 
+    - scheme: slate
+      primary: pink
   markdown_extensions:
   - footnotes
   - attr_list
@@ -54,3 +52,24 @@ theme:
     - table-reader
     - glightbox
     - social
+  extra:
+    status:
+      new: Recently added
+      deprecated: Deprecated
+
+nav:
+  - Главная: index.md
+  - Работа с переводами:
+    - Solicen Universal Installer:
+      - Что за SUI?: SUI/WhatIsSUI.md
+      - Функционал: SUI/Functional.md
+    - Solicen Open Format:
+      - Открытый формат: SOFFormat.md
+      - Работа с строками: strings.md
+ # - Работа с портами:
+ #   - Как делают порты?: SolicenTEAM/howToMakePorts.md
+ # - Создание модов:
+ #     - DDLC: 
+ #       - Как создают моды?: SolicenTEAM/DDLC/makeMods.md
+ #     - Barotrauma:
+ #       - Как создают моды?: SolicenTEAM/Barotrauma/makeMods.md
