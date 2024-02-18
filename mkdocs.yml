@@ -1,0 +1,64 @@
+site_name: Solicen Open Format (SOF|SUI)
+repo_url: https://github.com/DenisSolicen/SolicenUniversalInstaller
+repo_name: Solicen Universal Installer
+theme:
+  name: material
+  features:
+    - navigation.path
+    - navigation.sections
+    - navigation.top
+    - header.autohide
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotate
+    - content.code.copy
+    - content.action.edit
+    - content.action.view
+  language: ru
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate 
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode 
+  extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/james-willett
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/TheJamesWillett
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/willettjames/
+  markdown_extensions:
+  - footnotes
+  - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  plugins:
+    - search
+    - table-reader
+    - glightbox
+    - social
