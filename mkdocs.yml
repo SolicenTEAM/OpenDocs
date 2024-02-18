@@ -1,7 +1,7 @@
 site_name: SolicenTEAM Documentation
 repo_url: https://github.com/SolicenTEAM/OpenDocs
 repo_name: SolicenTEAM/OpenDocs
-edit_uri: edit/master/docs/
+edit_uri: edit/main/docs/
 theme:
   name: material
   features:
