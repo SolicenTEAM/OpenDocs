@@ -1,5 +1,5 @@
 site_name: SolicenTEAM Documentation
-repo_url: https://solicenteam.github.io/OpenDocs/
+repo_url: https://github.com/SolicenTEAM/OpenDocs
 repo_name: SolicenTEAM/OpenDocs
 edit_uri: edit/master/docs/
 theme:
@@ -54,15 +54,16 @@ theme:
     - social
   extra:
     status:
-      new: Recently added
-      deprecated: Deprecated
+      new: Недавно добавлено
+      deprecated: Устарело
 
 nav:
-  - Главная: index.md
-  - Работа с переводами:
+  - Добро пожаловать: index.md
+  - Установка переводов:
     - Solicen Universal Installer:
       - Что за SUI?: SUI/WhatIsSUI.md
       - Функционал: SUI/Functional.md
+  - Создание переводов:
     - Solicen Open Format:
       - Открытый формат: SOFFormat.md
       - Работа с строками: strings.md
