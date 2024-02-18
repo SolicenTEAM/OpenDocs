@@ -1,6 +1,6 @@
 site_name: Solicen Open Format (SOF|SUI)
-repo_url: https://github.com/DenisSolicen/SolicenUniversalInstaller
-repo_name: Solicen Universal Installer
+repo_url: https://solicenteam.github.io/OpenDocs/
+repo_name: SolicenOpenDocs
 theme:
   name: material
   features:
@@ -27,14 +27,6 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode 
-  extra:
-  social:
-    - icon: fontawesome/brands/github-alt
-      link: https://github.com/james-willett
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/TheJamesWillett
-    - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/willettjames/
   markdown_extensions:
   - footnotes
   - attr_list
