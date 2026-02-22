@@ -1,9 +1,14 @@
-site_name: SolicenTEAM Documentation
-repo_url: https://github.com/SolicenTEAM/OpenDocs
-repo_name: SolicenTEAM/OpenDocs
+site_name: "Solicen • Docs"
+repo_url: https://github.com/SolicenTEAM/opendocs
+repo_name: SolicenTEAM/opendocs
 edit_uri: edit/main/docs/
+
+extra_css: [extra.css]
 theme:
   name: material
+  palette:
+      scheme: slate
+      primary: black
   features:
     - navigation.indexes
     - navigation.path
@@ -12,19 +17,20 @@ theme:
     - navigation.tracking
     - navigation.expand
     - navigation.prune
+    - navigation.instant.progress
     - header.autohide
-    - toc.integrate
+    - toc.follow
     - search.suggest
+    - search.share
     - search.highlight
     - content.tabs.link
     - content.code.annotate
+    - content.tooltips
     - content.code.copy
+    - content.code.select
     - content.action.edit
     - content.action.view
   language: ru
-  palette:
-    - scheme: slate
-      primary: pink
   markdown_extensions:
   - footnotes
   - attr_list
