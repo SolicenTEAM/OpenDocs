@@ -94,6 +94,10 @@ font-size: 0.7rem !important;
 
 }
 
+.md-path {
+  display: none !important;
+}
+
 .md-main__inner {
     display: flex;
     flex-direction: row;
