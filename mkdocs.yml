@@ -65,21 +65,25 @@ theme:
 
 nav:
   - Добро пожаловать: index.md
-  - Основа системы Солицена:
-    - Solicen Universal Installer:
-      - Что за SUI?: Solicen/SUI/WhatIsSUI.md
-      - Функционал установщика: Solicen/SUI/Functional.md
-    - Solicen Open Format:
-      - Открытый формат: Solicen/SOFFormat.md
-      - Работа с строками: Solicen/strings.md
-  - Создание переводов:
-    - KiriKiri Engine (.xp3): 
-      - Перевод игр созданных на KiriKiri Engine: Translation/kirikiri.md
-    - Ren'Py Visual Novel:
-      - Перевод игр созданных на Ren'Py Engine: Translation/renpy.md
-    - Unity3D Engine:
-      - Перевод игр созданных на Unity Engine: Translation/unityengine.md
+  - ГАЙДЫ:
+    - Unreal Engine: guides/unreal engine.md
 
+    - Устарело:
+      - Основа системы Солицена:
+        - Solicen Universal Installer:
+          - Что за SUI?: Solicen/SUI/WhatIsSUI.md
+          - Функционал установщика: Solicen/SUI/Functional.md
+        - Solicen Open Format:
+          - Открытый формат: Solicen/SOFFormat.md
+          - Работа с строками: Solicen/strings.md
+      - Создание переводов:
+        - KiriKiri Engine (.xp3): 
+          - Перевод игр созданных на KiriKiri Engine: Translation/kirikiri.md
+        - Ren'Py Visual Novel:
+          - Перевод игр созданных на Ren'Py Engine: Translation/renpy.md
+        - Unreal Engine:
+          - Перевод игр созданных на Unreal Engine: Translation/unrealengine.md   
+  
  # - Работа с портами:
  #   - Как делают порты?: SolicenTEAM/howToMakePorts.md
  # - Создание модов:
