@@ -10,10 +10,11 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v6
       - uses: actions/setup-python@v4
         with:
           python-version: 3.x
+<<<<<<< HEAD
             - name: Set up build cache
       - uses: actions/cache/restore@v4
         with:
@@ -29,3 +30,11 @@ jobs:
         with:
           key: mkdocs-material-${{ hashfiles('.cache/**') }}
           path: ~/.cache
+=======
+      - uses: actions/cache@v4
+        with:
+          key: ${{ github.ref }}
+      - run: pip install mkdocs-material
+      - run: pip install pillow cairosvg
+      - run: mkdocs gh-deploy --force
+>>>>>>> ec6cccfc4c505da99a3893e06c3384a23469d14a
