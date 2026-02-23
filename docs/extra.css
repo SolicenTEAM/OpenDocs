@@ -109,6 +109,8 @@ font-size: 0.7rem !important;
   font-size: 15px;
 }
 
+
+
 .md-nav__item .md-nav__link--active, .md-nav__item .md-nav__link--active code {
     background-color: #80808047;
     border-radius: 10px;
@@ -141,6 +143,20 @@ font-size: 0.7rem !important;
   padding: 24px !important;
   border-radius: 10px;
     background-color: rgb(22 24 26);
+}
+
+.md-typeset code {
+      color: burlywood;
+        padding: 2px 6px;
+}
+
+.md-typeset a {
+  color: #0087ff;
+  font-weight: bold;
+}
+
+.md-typeset a:hover {
+  color: #d18a1f;
 }
 
 .md-clipboard {
