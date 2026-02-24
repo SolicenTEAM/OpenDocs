@@ -6,42 +6,18 @@ on:
       - main
 permissions:
   contents: write
-  id-token: write
-  pages: write
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - uses: actions/setup-python@v4
         with:
           python-version: 3.x
-
-      - name: Set up build cache
-        uses: actions/cache/restore@v4
+      - uses: actions/cache@v4
         with:
-          key: mkdocs-material-${{ hashfiles('.cache/**') }}
-          path: ~/.cache
-          restore-keys: |
-            mkdocs-material-
-
+          key: ${{ github.ref }}
+          path: .cache
       - run: pip install mkdocs-material
       - run: pip install pillow cairosvg
-
-      - name: Build documentation
-        run: |
-          mkdocs build --clean
-          mkdocs --version
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ././site
-          keep_files: false
-
-      - name: Save build cache
-        uses: actions/cache/save@v4
-        with:
-          key: mkdocs-material-${{ hashfiles('.cache/**') }}
-          path: ~/.cache
+      - run: mkdocs gh-deploy --force
