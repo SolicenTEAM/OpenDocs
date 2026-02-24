@@ -1,0 +1,1370 @@
+
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../Solicen/strings/">
+      
+      
+        <link rel="next" href="../renpy/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
+    
+    
+      
+        <title>Перевод игр созданных на KiriKiri Engine - Solicen • Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kirikiri-engine" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href="../.." title="Solicen • Docs" class="md-header__button md-logo" aria-label="Solicen • Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Solicen • Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Перевод игр созданных на KiriKiri Engine
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Поделиться" aria-label="Поделиться" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/SolicenTEAM/opendocs" title="Перейти к репозиторию" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    SolicenTEAM/opendocs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Solicen • Docs" class="md-nav__button md-logo" aria-label="Solicen • Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Solicen • Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/SolicenTEAM/opendocs" title="Перейти к репозиторию" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    SolicenTEAM/opendocs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Добро пожаловать
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ГАЙДЫ
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ГАЙДЫ
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/unreal%20engine/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unreal Engine
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Устарело
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Устарело
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    
+  
+  
+  
+    <a href="../../Solicen/SUI/WhatIsSUI/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Основа системы Солицена
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Создание переводов
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Создание переводов
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_2_1" id="__nav_2_2_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    KiriKiri Engine (.xp3)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_2_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    KiriKiri Engine (.xp3)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Перевод игр созданных на KiriKiri Engine
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Перевод игр созданных на KiriKiri Engine
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Кодекс значений
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Извлечение текста
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Извлечение текста">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Распаковка ресурсов
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Работа с текстом - распаковка и запаковка назад
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Полная распаковка игры
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Полная распаковка игры">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Загрузка необходимых инструментов
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Распаковка игры
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Обьединяй и властвуй
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../renpy/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ren'Py Visual Novel
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../unrealengine/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unreal Engine
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Кодекс значений
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Извлечение текста
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Извлечение текста">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Распаковка ресурсов
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Работа с текстом - распаковка и запаковка назад
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Полная распаковка игры
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Полная распаковка игры">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Загрузка необходимых инструментов
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Распаковка игры
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Обьединяй и властвуй
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Навигация" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Добро пожаловать
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../../guides/unreal%20engine/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    ГАЙДЫ
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+    
+      
+  
+  
+    
+    
+      
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../../Solicen/SUI/WhatIsSUI/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Устарело
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+    
+    
+      
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="./" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Создание переводов
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="./" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    KiriKiri Engine (.xp3)
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/SolicenTEAM/opendocs/edit/main/docs/Translation/kirikiri.md" title="Редактировать страницу" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/SolicenTEAM/opendocs/raw/main/docs/Translation/kirikiri.md" title="Посмотреть исходный код страницы" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="kirikiri-engine">Перевод игр созданных на <a href="https://en.wikipedia.org/wiki/List_of_visual_novel_engines#KiriKiri">KiriKiri Engine</a></h1>
+<p>В этом весьма полезном руководстве я хочу рассмотреть такой сложный но важдый для переводчика движок как <strong>kirikiri</strong>, не беря в расчет его модификации ибо о работе с ними я поговорю как нибудь в другой раз.</p>
+<p>Вся сложность работы с движком Kirikiri в том, что в отличии от более простого в понимании <strong>Ren'Py</strong>, в том, что, он и его архивы могут быть защищены DRM защитой, и ключами шифрования без которых он не станет воспринимать архив как нечто цельное. </p>
+<p>Однако я воспользуюсь тем, что до нас уже любезно создали другие энтузиасты и провели громадную работу по отладке всего и вся.</p>
+<hr />
+<p>В первую очередь я хочу поблагодарить:</p>
+<p><a href="https://github.com/UlyssesWu">UlyssesWu</a> - <a href="https://github.com/UlyssesWu/FreeMote">FreeMote</a>, что лежит в основе многих проектов по работе с движком <strong>KiriKiri</strong>. <br>
+<a href="https://github.com/arcusmaximus">arcusmaximus</a> - <a href="https://github.com/arcusmaximus/KirikiriTools">KirikiriTools</a> для работы с движком KiriKiri. <br>
+<a href="https://github.com/xmoezzz">xmoezzz</a> - <a href="https://github.com/xmoezzz/KrkrExtract">KrkrExtract</a>, что лег в основу следующим творениям энтузиастов. <br>
+<a href="https://github.com/morkt">morkt</a> - <a href="https://github.com/morkt/GARbro">GARbro</a> за создание вьювера и упаковщика ресурсов движков визуальных новелл. <br>
+<a href="https://github.com/storycraft">storycraft</a> - <a href="https://github.com/storycraft/scn-tool">scn-tool</a> который помогает с легкостью извлекать текст из <strong>.scn</strong> файлов и упаковывать его обратно теми же инструментами без дополнительного головняка. </p>
+<p><a href="https://forums.fuwanovel.net">fuwanovel.net</a> - англоязычный форум, за непрямую помощь в составлении данного гайда.</p>
+<hr />
+<h2 id="_1">Кодекс значений</h2>
+<ul>
+<li><code>.xp3</code> - Архив ресурсов используемый <a href="https://en.wikipedia.org/wiki/List_of_visual_novel_engines#KiriKiri">KiriKiri Engine</a>, аналогичен файлу <code>.rpa</code> в Ren'Py.</li>
+<li><code>*.scn</code> - Файл содержащий в себе текст сцены а также её скрипты, аналогичен файлу <code>.rpyc</code> в Ren'Py.</li>
+</ul>
+<hr />
+<h2 id="_2">Извлечение текста</h2>
+<p>В этом примере, я хочу быстро продемострировать как можно сделать быстрый перевод без больших временных вложений, и особо не морочась с командной строкой и её производными. <em>Хотя испачкаться придется всё равно.</em></p>
+<h3 id="_3">Распаковка ресурсов</h3>
+<ol>
+<li>Вам потребуется загрузить все <a href="https://github.com/arcusmaximus/KirikiriTools/releases/tag/1.7">инструменты</a> по ссылке в тексте, или по <a href="">данной</a> ссылке если репозитория оригинального автора больше не существует на момент просмотра документации.</li>
+<li>Расположите файл <code>version.dll</code> в папке игры на движке KiriKiri которую вы хотите перевести или распаковать её ресурсы, как правило в главной папке игры должны быть архивы, что оканчиваются на <code>.xp3</code>.</li>
+<li>Создайте пустой файл <code>extract-unencrypted.txt</code> в папке игры. <ul>
+<li>Благодаря данному файлу, при следующем запуске игры, вы запустите распаковку в папку <code>unencrypted</code> в которой будут все файлы которые успел захватить хук <code>version.dll</code> и которые прочитал. </li>
+<li><em>Для полной распаковки мы будем использовать другие инструменты, это же лишь временный способ для быстрого перевода.</em></li>
+</ul>
+</li>
+<li>После запуска игры, начните новую игру и просмотрите немного текста. После чего закройте игру, и в папке <code>unencrypted</code> вы обнаружите множество файлов которые успел распаковать хук, но вам должен быть интересен лишь один, это файл <code>.scn</code> вы должны найти его, после чего перейти к следующему шагу.<ul>
+<li>Также вы можете удалить файл <code>extract-unencrypted.txt</code> если хотите, он требуется только для распаковки, и не нужен для работы перевода в дальнейшем.</li>
+</ul>
+</li>
+</ol>
+<p>Вы распаковали ресурсы игры, не все, лишь часть, потому как данный способ не поддерживает распаковку всего, что вы <strong>не увидели</strong> вы можете пробежаться по всей игре и распаковать все ресурсы, или воспользоваться дополнительным другим способом, о котором пойдет речь после <em>Быстрой распаковки</em> она же <em>Извлечение текста</em> а пока продолжаем.</p>
+<h3 id="-">Работа с текстом - распаковка и запаковка назад</h3>
+<p>Если вы уже распаковали ресурсы игры, или уже имеете в закромах некие <code>.scn</code> файлы, вам может быть интересно, а как же извлечь из них текст для работы с ним?! Что же, я дам вполне легкое и доступное пояснение, что делать дальше.</p>
+<ol>
+<li>Теперь нам потребуется другой инструменты такой как <a href="https://github.com/storycraft/scn-tool/releases">scn-tool</a>, загрузите его по ссылке, или по <a href="">данной</a> ссылке если репозитория оригинального автора больше не существует на момент просмотра документации.</li>
+<li>Распакуйте скачанный архив в любую папку.</li>
+<li>
+<p>Открыв ранее распакованную папку, перетащите на файл <code>scn-script-extractor.exe</code> файл <code>.scn</code> из папки <code>unencrypted</code>, в результате чего вы получите в папке <code>unencrypted</code> файл с названием аналогичным тому, что вы перетащили, но с окончанием <code>.toml</code>.</p>
+<ul>
+<li>Можете открыть его любым текстовым редактором и убедиться, что это простой текстовый документ с определенными числовыми указателями рядом со строками. Не трогайте их.</li>
+</ul>
+<blockquote>
+<p>Хотя я думаю, что тот кто решился на перевод игры на KiriKiri Engine достаточно осведомлен в вопросах работы с различными движками, и понимает программирование на хотя-бы базовом уровне, чтобы осознавать свои действия и то к чему они могут привести.</p>
+</blockquote>
+</li>
+<li>
+<p>После того, как вы перевели <code>.toml</code> файл, и готовы запаковать его обратно в <code>.scn</code> то вам потребуется, открыть командную строку:</p>
+<ul>
+<li>Ввести путь до вашей папки с иструментом <code>scn-script-inserter.exe</code> через <code>cd {путь}</code></li>
+<li>Ввести команду <code>scn-script-inserter.exe &lt;toml_путь_до_файла&gt; &lt;scn_файл&gt; [конечный_файл]</code></li>
+<li>После чего получите финальный файл <code>.scn</code> с вашими измененными строками.</li>
+<li>Если финальный файл <code>.scn</code> не находится в папке <code>unencrypted</code>, то переместите его туда, с заменой файла если потребуется.</li>
+</ul>
+</li>
+</ol>
+<p>Теперь вы можете запустить игру и проверить вашу работу, и то, что благодаря хуку <code>version.dll</code> игра считывает файлы из папки <code>unencrypted</code> за место тех, которые расположены в оригинальных архивах игры. </p>
+<p>Тем самым давая свободу в работе и легкость изменения онных.</p>
+<hr />
+<h2 id="_4">Полная распаковка игры</h2>
+<p>Теперь я хочу рассмотреть легчайший способ по полной распаковке всех ресурсов игры, не прибегая к отдельному просмотру их ресурсов или монотонной работе с ними, если же вам требуется ими это, то воспользуйтесь GARbro, а я продолжу гайд.</p>
+<h3 id="_5">Загрузка необходимых инструментов</h3>
+<ol>
+<li>
+<p>Первым делом загрузите <a href="https://github.com/xmoezzz/KrkrExtract">KrkrExtract</a> по ссылке в тексте, или по <a href="">данной</a> ссылке если репозитория оригинального автора больше не существует на момент просмотра документации.</p>
+<blockquote>
+<p>Проверьте ваш антивирус, вполне вероятно он мог изолировать файлы программы и сработать ложно-позитивно на неё и её ресурсы. Если это случилось, то вытащите файлы из карантина или перекачайте их заново если антивирус их уже удалил, предварительно отметив что данный файл не является вирусов в вашем антивирусе а также браузере.</p>
+</blockquote>
+</li>
+<li>
+<p>После загрузки, расположите файлы: <code>KrkrExtract.Lite.exe</code> | <code>KrkrExtract.Core.dll</code> | <code>KrkrExtract.UI.Lite.dll</code> в главной папке игры, рядом с <code>.exe</code> файлом запускающим игру.</p>
+</li>
+</ol>
+<h3 id="_6">Распаковка игры</h3>
+<p>В отличии от уже поднятого мною выше способа распаковки игры, в этот раз я хочу получить абсолютно все файлы и весь арт, включая анимации и спрайты, а также текст из игры, дабы уже работать с ними для перевода, или просто чтобы распаковать игру.</p>
+<ol>
+<li>Представим, что вы выполнили все условия выше, а потому продолжим, перетащите запускающий игру <code>.exe</code> файл на <code>KrkrExtract.Lite.exe</code>, и подтвердите запуск, у вас откроется окно интерфейса программы <code>KrkrExtract</code> а также откроется сама игра, кроме этого также создадутся <code>.sig</code> и <code>.index</code> файлы всех архивов игры, в большинстве случаев это архивы <code>.xp3</code></li>
+<li>
+<p>Теперь перетащите каждый <code>.xp3</code> файл в окно <code>KrkrExtract</code> и дождитесь распаковки всех ресурсов архива, и проделайте тоже самое с каждым из них, или не с каждым, смотря что именно вам нужно.</p>
+<blockquote>
+<p>Обычно игры на этом движке содержат только файлы <code>data.xp3</code> но иногда это могут быть отдельные архивы такие как <code>scn.xp3</code>, если вы собираетесь переводить текст, то вам нужен именно файл сценариев (сцен) а именно <code>scn.xp3</code>, но если игра не содержит его, то вероятно придется распаковать каждый из <code>.xp3</code> файлов, чтобы найти текст игры.</p>
+</blockquote>
+</li>
+<li>
+<p>Каждый из распакованных вами архивов переместился в папку <code>KiriKiri-Output</code> или что-то похожее, там будут лежать все распакованные файлы игры.</p>
+</li>
+</ol>
+<p>И на этом, с полной распаковкой всё, так как более подробный гайд не покрывается нашим бюджетом.</p>
+<hr />
+<h2 id="_7">Обьединяй и властвуй</h2>
+<p>Теперь я хочу обьединить оба гайда, и слепить из них более нечто узконаправленное и цельное, с целью получить более мелкий гайд, по полному переводу игры на движке <a href="https://en.wikipedia.org/wiki/List_of_visual_novel_engines#KiriKiri">KiriKiri Engine</a>.</p>
+<p>Для полного перевода нам понадобится:</p>
+<ol>
+<li>Навыки владения фотошопом</li>
+<li>Навыки владения русским и английским и японским языком</li>
+<li>Переводчик в подвале или в нашем уме</li>
+<li>Запретная магия древних, как как литературная редактура</li>
+<li>Графический дизайнер который оживит всё</li>
+</ol>
+<p>А если по серьезному, то вам придется <strong>просмотреть</strong> и <strong>перерисовать</strong> каждый спрайт игры, который связан с интерфейсом, например кнопки, и отдельные экраны игры в которых текст вставлен изображением, а не как текст.</p>
+<p>Если вы выполнили эту непростую задачу по перерисовке интерфейса и уже готовы протестировать ваш перевод, то вам потребуется <code>version.dll</code> из гайда по <em><a href="#_1">Извлечению текста</a></em> а также создать папку <code>unencrypted</code> в папке с игрой, после чего поместить в неё все переведенные ресурсы игры, аналогично примеру выше.</p>
+<blockquote>
+<p>Если вы хотите, вы можете упаковать папку <code>unencrypted</code> как архив <code>unencrypted.xp3</code> при помощи <a href="https://github.com/morkt/GARbro">GARbro</a>, чтобы не смущать ваших пользователей непонятными папками и ресурсами в них, но об этом речь пойдет как-нибудь в другой раз.</p>
+</blockquote>
+<p>Если вы всё сделали правильно, то после запуска игры вы увидите переведенные вами изображения, и ресурсы, а также переведенный вами текст, но если вы что-то сделали неправильно, то ищите ошибку у себя или в тексте данного гайда.</p>
+<blockquote>
+<p>На этом всё, хороших переводов!</p>
+</blockquote>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  К началу
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.indexes", "navigation.path", "navigation.sections", "navigation.top", "navigation.tracking", "navigation.expand", "navigation.prune", "navigation.instant.progress", "header.autohide", "toc.follow", "search.suggest", "search.share", "search.highlight", "content.tabs.link", "content.code.annotate", "content.tooltips", "content.code.copy", "content.code.select", "content.action.edit", "content.action.view"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

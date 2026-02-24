@@ -1,0 +1,281 @@
+/* Переопределение CSS-переменных для темы Material for MkDocs */
+
+/* Задаем основную светлую тему в стиле Wikipedia/shadcn/ui */
+:root {
+  --md-primary-fg-color: #111827; /* Темно-серый текст для лучшего контраста */
+  --md-primary-bg-color: #ffffff; /* Белый фон */
+
+  /* Цвет ссылок и акцентов */
+  --md-accent-fg-color: #2563eb; /* Более насыщенный синий */
+  --md-accent-fg-color--transparent: rgba(37, 99, 235, 0.1);
+
+  /* Шрифты, как в современных UI-китах (shadcn/ui) */
+  --md-text-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --md-code-font: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+
+  /* Убираем тени для более плоского, "википедийного" вида */
+  --md-shadow-z1: none;
+  --md-shadow-z2: none;
+  --md-shadow-z3: none;
+
+  /* Фон для блоков кода */
+  --md-code-bg-color: #f8f9fa; /* Светло-серый */
+  --md-code-fg-color: #111827;
+
+  /* Левая навигационная панель */
+  --md-nav-bg-color: #f8f9fa;
+  --md-nav-fg-color: #111827;
+  --md-nav-fg-color--active: #2563eb;
+  --md-nav-fg-color--hover: #2563eb;
+
+  /* Шапка сайта */
+  --md-header-bg-color: #ffffff;
+  --md-header-fg-color: #111827;
+}
+
+/* Добавляем легкую тень под шапку для отделения от контента */
+.md-header {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.md-header__topic {
+font-size: 0.7rem !important;
+}
+
+.md-search__input {
+  font-size: .6rem;
+  border-radius: 20px;
+}
+
+[dir=ltr] .md-source__repository {
+  font-size: .6rem;
+}
+
+/* Более тонкие и современные полосы прокрутки */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,.2);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* --- Улучшения типографики для лучшей читаемости --- */
+.md-typeset {
+  font-size: 16px; /* Стандартный размер шрифта для основного текста */
+  line-height: 1.7; /* Увеличиваем межстрочный интервал */
+}
+
+.md-typeset h1 {
+  font-size: 3.3em; /* Делаем главный заголовок крупнее */
+  font-weight: 800;
+  text-wrap-style: pretty;
+  letter-spacing: -0.04em; /* Слегка сжимаем буквы для плотности */
+
+}
+
+.md-typeset h2 {
+    border-bottom: 1px solid rgba(253, 254, 255, 0) !important;  
+}
+
+.md-content {
+  padding: 20px;
+  justify-items: anchor-center;
+  max-width: 100vh;
+    text-wrap-style: pretty;
+}
+
+.md-content p {
+  max-width: 90vw;
+
+}
+
+.md-path {
+  display: none !important;
+}
+
+.md-main__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 10px;
+}
+
+.md-nav__link .md-ellipsis {
+  font-size: 15px;
+}
+
+
+
+.md-nav__item .md-nav__link--active, .md-nav__item .md-nav__link--active code {
+    background-color: #80808047;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.md-nav__title {
+      font-size: 16px;
+      display: none;;
+}
+
+.md-nav__item .md-nav__link:hover, .md-nav__item .md-nav__link:hover code {
+    background-color: #8080803b;
+    border-radius: 10px;
+    color: white;
+}
+
+.md-nav__item .md-nav__link, .md-nav__item .md-nav__link code {
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    margin-top: 4px;
+    color: white;
+    text-wrap-style: pretty;
+}
+
+.md-typeset pre>code {
+  padding: 24px !important;
+  border-radius: 10px;
+    background-color: rgb(22 24 26);
+}
+
+.md-typeset code {
+      color: burlywood;
+        padding: 2px 6px;
+}
+
+.md-typeset a {
+  color: #0087ff;
+  font-weight: bold;
+}
+
+.md-typeset a:hover {
+  color: #d18a1f;
+}
+
+.md-clipboard {
+  color: hsl(39.29deg 36.87% 61.57%) !important;
+}
+
+[dir=ltr] .md-typeset blockquote {
+      border-left: .2rem solid hsl(227.08deg 77.76% 51.09%) !important;
+  color: white;
+}
+
+.md-typeset h2 {
+  font-size: 1.8em;
+  font-weight: 700;
+  border-bottom: 1px solid #e5e7eb; /* Линия-разделитель для светлой темы */
+  padding-bottom: 0.3em;
+}
+
+/* --- Стилизация таблиц в духе shadcn/ui --- */
+.md-typeset table:not([class]) {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: transparent; /* Убираем фон у заголовков */
+  font-weight: 600;
+}
+
+.md-typeset table:not([class]) td, .md-typeset table:not([class]) th {
+  border-bottom: 1px solid #e5e7eb; /* Оставляем только нижние границы у ячеек */
+  padding: 12px 15px;
+}
+
+.md-typeset table:not([class]) tr:last-child td {
+  border-bottom: none; /* Убираем границу у последней строки */
+}
+
+/* --- Уменьшение высоты и типографики хедера --- */
+.md-header {
+  /* Уменьшаем высоту шапки. Стандартное значение 3.1rem */
+  height: .8rem;
+}
+
+.md-grid {
+  max-width: none;
+}
+
+/* Уменьшаем шрифт заголовка сайта в шапке */
+.md-header__topic {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* --- Стилизация информационных блоков (admonitions) в стиле shadcn/ui --- */
+.md-typeset .admonition {
+  border-radius: 0.5rem; /* Скругляем углы */
+  border-width: 1px;
+  border-style: solid;
+  box-shadow: none; /* Убираем стандартную тень */
+  font-size: 0.9rem;
+  padding: 1rem;
+}
+
+.md-typeset .admonition-title {
+  background-color: transparent; /* Убираем фон у заголовка */
+  border: none;
+  font-weight: 600;
+  margin: 0 0 0.5rem; /* Убираем отступы по умолчанию и добавляем нижний */
+  padding: 0;
+}
+
+.md-typeset .admonition.note,
+.md-typeset .admonition.seealso {
+  border-color: #e5e7eb;
+  background-color: #f8f9fa;
+}
+
+.md-typeset .admonition.info,
+.md-typeset .admonition.todo,
+.md-typeset .admonition.tip,
+.md-typeset .admonition.hint,
+.md-typeset .admonition.important {
+  border-color: #dbeafe;
+  background-color: #eff6ff;
+}
+
+.md-typeset .admonition.success,
+.md-typeset .admonition.check,
+.md-typeset .admonition.done {
+  border-color: #dcfce7;
+  background-color: #f0fdf4;
+}
+
+.md-typeset .admonition.warning,
+.md-typeset .admonition.caution,
+.md-typeset .admonition.attention {
+  border-color: #fee2e2;
+  background-color: #fef2f2;
+}
+
+.md-typeset .admonition.failure,
+.md-typeset .admonition.fail,
+.md-typeset .admonition.missing,
+.md-typeset .admonition.danger,
+.md-typeset .admonition.error,
+.md-typeset .admonition.bug {
+  border-color: #fee2e2;
+  background-color: #fef2f2;
+}
+
+[data-md-color-scheme=slate] {
+--md-default-bg-color: hsl(0deg 0% 0%);
+.md-footer-meta {
+  background-color: black;
+}
+
+}
+
+[data-md-color-primary=black] .md-header {
+  background-color: black;
+}
